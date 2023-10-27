@@ -18,7 +18,7 @@ public final class Plugin extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Plugin loaded!");
         GlobalEventChannel.INSTANCE.subscribeAlways(FriendMessageEvent.class, (FriendMessageEvent event) ->{
-            event.getSender().sendMessage("喵");
+            event.getSender().sendMessage("hello");
         });
     }
 }
